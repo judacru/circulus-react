@@ -38,7 +38,6 @@ export const PublicationList = ({ publications, page, setPage, more, setMore, ge
 
                 {publications.map(publication => {
                     return (
-
                         <article className="posts__post" key={publication._id}>
 
                             <div className="post__container">
