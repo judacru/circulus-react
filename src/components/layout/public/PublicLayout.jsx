@@ -4,17 +4,14 @@ import useAuth from '../../../hooks/useAuth'
 import { Header } from './Header'
 
 export const PublicLayout = () => {
+  const { auth } = useAuth()
+  return (
+    <>
+      <Header />
 
-    const { auth } = useAuth();
-    return (
-        <>
-            <Header />
-
-            <section className="layout__content">
-                {!auth?._id ?
-                    <Outlet /> :
-                    <Navigate to="/social" />}
-            </section>
-        </>
-    )
+      <section className="layout__content">
+        {!auth?.id ? <Outlet /> : <Navigate to="/social" />}
+      </section>
+    </>
+  )
 }
