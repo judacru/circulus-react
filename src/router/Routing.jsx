@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, BrowserRouter, Navigate, Link } from 'react-router-dom'
+import { Routes, Route, Link, HashRouter } from 'react-router-dom'
 import { PublicLayout } from '../components/layout/public/PublicLayout'
 import { Login } from '../components/user/Login'
 import { Register } from '../components/user/Register'
@@ -15,7 +15,7 @@ import { Profile } from '../components/user/Profile'
 
 export const Routing = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <Routes>
           <Route path="/" element={<PublicLayout />}>
@@ -48,6 +48,6 @@ export const Routing = () => {
           />
         </Routes>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }

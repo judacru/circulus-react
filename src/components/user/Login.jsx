@@ -75,7 +75,7 @@ export const Login = () => {
 
           <input
             type="submit"
-            value="identificate"
+            value="Identificate"
             className="btn btn-success"
           />
         </form>

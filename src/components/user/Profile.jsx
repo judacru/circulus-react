@@ -27,9 +27,7 @@ export const Profile = () => {
 
     const data = await request.json()
 
-    if (data.following) {
-      setCounters(data)
-    }
+    setCounters(data)
   }
 
   useEffect(() => {

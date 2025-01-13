@@ -1,3 +1,3 @@
 export const Global = {
-  url: 'http://localhost:3900/api/',
+  url: import.meta.env.VITE_URL_BACK + '/api/',
 }

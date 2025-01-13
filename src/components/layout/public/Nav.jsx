@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export const Nav = () => {
   return (
-    <nav className="navbar__container-lists">
-      <ul className="container-lists__menu-list">
+    <nav className="navbar__private">
+      <ul className="container-lists_private">
         <li className="menu-list__item">
           <NavLink to="/login" className="menu-list__link">
             <i className="fa-solid fa-user"></i>
